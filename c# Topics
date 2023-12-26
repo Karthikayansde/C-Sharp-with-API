@@ -1,0 +1,44 @@
+// get and set functions
+using System;
+public class MyClass
+{
+    private int myProperty; // private field to store the property value
+
+    // Property with get and set methods
+    public int MyProperty
+    {
+        get
+        {
+            // This is the get method
+            return myProperty;
+        }
+        set
+        {
+            // This is the set method
+            myProperty = value;
+        }
+    }
+// Property with get and set methods ****shortcut
+    // public int MyProperty
+    // {
+    //     get;
+    //     set;
+    // }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Create an instance of MyClass
+        MyClass myObject = new MyClass();
+
+        // Set the value of the property using the set method
+        myObject.MyProperty = 42;
+
+        // Retrieve the value of the property using the get method
+        int value = myObject.MyProperty;
+
+        Console.WriteLine("Value of MyProperty: "+value);
+    }
+}
