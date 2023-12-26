@@ -24,6 +24,11 @@ public class MyClass
     //     get;
     //     set;
     // }
+// also
+
+    public int myVal{get;set;}
+// no set only return
+    public int myVal1 => 32;
 }
 
 class Program
